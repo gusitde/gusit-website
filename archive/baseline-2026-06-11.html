@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gus IT – IT Consulting & Luca AI</title>
+    <meta name="description" content="Gus IT – Expert IT Consulting and home of Luca AI, the intelligent AI Operating System for modern businesses.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #3b82f6;
+            --accent-light: #60a5fa;
+            --accent-glow: rgba(59, 130, 246, 0.15);
+            --surface: #1e293b;
+            --surface-light: #334155;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --gradient-1: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            --gradient-2: linear-gradient(135deg, #0f172a, #1e293b);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--primary);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed; top: 0; width: 100%; z-index: 1000;
+            padding: 1rem 2rem;
+            backdrop-filter: blur(20px);
+            background: rgba(15, 23, 42, 0.85);
+            border-bottom: 1px solid rgba(59, 130, 246, 0.1);
+            transition: all 0.3s;
+        }
+        nav.scrolled { padding: 0.6rem 2rem; background: rgba(15, 23, 42, 0.95); }
+        .nav-inner {
+            max-width: 1200px; margin: 0 auto;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem; font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+        }
+        .logo span { font-weight: 400; opacity: 0.8; }
+        .nav-links {
+            display: flex; align-items: center; gap: 2rem; list-style: none;
+        }
+        .nav-links a {
+            color: var(--text-muted); text-decoration: none;
+            font-size: 0.9rem; font-weight: 500; transition: color 0.3s;
+        }
+        .nav-links a:hover { color: var(--text); }
+        .lang-toggle {
+            display: flex; background: var(--surface);
+            border-radius: 8px; overflow: hidden;
+            border: 1px solid var(--surface-light);
+        }
+        .lang-btn {
+            padding: 0.35rem 0.75rem; font-size: 0.8rem; font-weight: 600;
+            border: none; cursor: pointer; background: transparent;
+            color: var(--text-muted); transition: all 0.3s; font-family: inherit;
+        }
+        .lang-btn.active { background: var(--accent); color: white; }
+        .hamburger {
+            display: none; flex-direction: column; gap: 5px;
+            cursor: pointer; background: none; border: none; padding: 4px;
+        }
+        .hamburger span { width: 24px; height: 2px; background: var(--text); transition: all 0.3s; }
+
+        /* HERO */
+        .hero {
+            min-height: 100vh; display: flex; align-items: center;
+            justify-content: center; text-align: center;
+            padding: 8rem 2rem 4rem; position: relative; overflow: hidden;
+        }
+        .hero::before {
+            content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+            background: radial-gradient(circle at 30% 50%, rgba(59, 130, 246, 0.08) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 50%, rgba(139, 92, 246, 0.06) 0%, transparent 50%);
+            animation: rotateGlow 30s linear infinite;
+        }
+        @keyframes rotateGlow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        .hero-content { position: relative; z-index: 1; max-width: 800px; }
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            padding: 0.5rem 1rem; background: var(--accent-glow);
+            border: 1px solid rgba(59, 130, 246, 0.3); border-radius: 50px;
+            font-size: 0.85rem; color: var(--accent-light); margin-bottom: 2rem;
+        }
+        .hero-badge .dot {
+            width: 8px; height: 8px; background: #22c55e;
+            border-radius: 50%; animation: pulse 2s infinite;
+        }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800;
+            line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -1px;
+        }
+        .hero h1 .gradient {
+            background: var(--gradient-1);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        .hero p {
+            font-size: 1.25rem; color: var(--text-muted);
+            max-width: 600px; margin: 0 auto 2.5rem; line-height: 1.7;
+        }
+        .hero-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+        .btn {
+            padding: 0.85rem 2rem; border-radius: 12px; font-size: 0.95rem;
+            font-weight: 600; text-decoration: none; transition: all 0.3s;
+            cursor: pointer; border: none; font-family: inherit;
+        }
+        .btn-primary {
+            background: var(--gradient-1); color: white;
+            box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
+        }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(59, 130, 246, 0.4); }
+        .btn-secondary {
+            background: var(--surface); color: var(--text);
+            border: 1px solid var(--surface-light);
+        }
+        .btn-secondary:hover { background: var(--surface-light); transform: translateY(-2px); }
+
+        /* SECTIONS */
+        section { padding: 6rem 2rem; }
+        .section-inner { max-width: 1200px; margin: 0 auto; }
+        .section-label {
+            font-size: 0.85rem; font-weight: 600; color: var(--accent);
+            text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem;
+        }
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem); font-weight: 800;
+            margin-bottom: 1.5rem; letter-spacing: -0.5px;
+        }
+        .section-desc {
+            font-size: 1.1rem; color: var(--text-muted);
+            max-width: 600px; line-height: 1.7;
+        }
+
+        /* SERVICES */
+        .services-header { margin-bottom: 4rem; }
+        .services-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;
+        }
+        .service-card {
+            background: var(--surface); border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 16px; padding: 2rem; transition: all 0.3s;
+            position: relative; overflow: hidden;
+        }
+        .service-card::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0;
+            height: 3px; background: var(--gradient-1); opacity: 0; transition: opacity 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-4px); border-color: rgba(59, 130, 246, 0.2);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .service-card:hover::before { opacity: 1; }
+        .service-icon {
+            width: 48px; height: 48px; background: var(--accent-glow);
+            border-radius: 12px; display: flex; align-items: center;
+            justify-content: center; font-size: 1.5rem; margin-bottom: 1.25rem;
+        }
+        .service-card h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.75rem; }
+        .service-card p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; }
+
+        /* LUCA AI */
+        #luca-ai {
+            background: linear-gradient(180deg, var(--primary) 0%, rgba(59, 130, 246, 0.03) 50%, var(--primary) 100%);
+        }
+        .luca-grid {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 4rem; align-items: center; margin-top: 4rem;
+        }
+        .luca-visual {
+            background: var(--surface); border: 1px solid rgba(59, 130, 246, 0.15);
+            border-radius: 20px; padding: 2.5rem; position: relative; overflow: hidden;
+        }
+        .luca-visual::before {
+            content: ''; position: absolute; top: -100px; right: -100px;
+            width: 250px; height: 250px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.1), transparent);
+            border-radius: 50%;
+        }
+        .luca-terminal {
+            background: var(--primary); border-radius: 12px; padding: 1.5rem;
+            font-family: 'Courier New', monospace; font-size: 0.85rem; position: relative;
+        }
+        .terminal-dots { display: flex; gap: 6px; margin-bottom: 1rem; }
+        .terminal-dots span { width: 10px; height: 10px; border-radius: 50%; }
+        .terminal-dots span:nth-child(1) { background: #ef4444; }
+        .terminal-dots span:nth-child(2) { background: #eab308; }
+        .terminal-dots span:nth-child(3) { background: #22c55e; }
+        .terminal-line { margin-bottom: 0.5rem; opacity: 0; animation: typeLine 0.5s forwards; }
+        .terminal-line .prompt { color: #22c55e; }
+        .terminal-line .cmd { color: var(--accent-light); }
+        .terminal-line .output { color: var(--text-muted); }
+        .terminal-line:nth-child(2) { animation-delay: 0.3s; }
+        .terminal-line:nth-child(3) { animation-delay: 0.8s; }
+        .terminal-line:nth-child(4) { animation-delay: 1.3s; }
+        .terminal-line:nth-child(5) { animation-delay: 1.8s; }
+        .terminal-line:nth-child(6) { animation-delay: 2.3s; }
+        .terminal-line:nth-child(7) { animation-delay: 2.8s; }
+        @keyframes typeLine { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+        .luca-features { display: flex; flex-direction: column; gap: 1.5rem; }
+        .luca-feature { display: flex; gap: 1rem; align-items: flex-start; }
+        .luca-feature-icon {
+            width: 40px; height: 40px; min-width: 40px;
+            background: var(--accent-glow); border-radius: 10px;
+            display: flex; align-items: center; justify-content: center; font-size: 1.2rem;
+        }
+        .luca-feature h4 { font-size: 1rem; font-weight: 600; margin-bottom: 0.3rem; }
+        .luca-feature p { color: var(--text-muted); font-size: 0.9rem; }
+        .luca-stats {
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem; margin-top: 3rem;
+        }
+        .stat-card {
+            background: var(--surface); border-radius: 12px; padding: 1.5rem;
+            text-align: center; border: 1px solid rgba(255,255,255,0.05);
+        }
+        .stat-number {
+            font-size: 2rem; font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        .stat-label { color: var(--text-muted); font-size: 0.85rem; margin-top: 0.25rem; }
+
+        /* ABOUT */
+        .about-grid {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 4rem; align-items: center; margin-top: 3rem;
+        }
+        .about-content .section-desc { margin-bottom: 2rem; }
+        .about-values { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        .value-item {
+            background: var(--surface); border-radius: 12px; padding: 1.25rem;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .value-item h4 { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.3rem; }
+        .value-item p { color: var(--text-muted); font-size: 0.85rem; }
+
+        /* CONTACT */
+        #contact {
+            background: linear-gradient(180deg, var(--primary) 0%, rgba(59, 130, 246, 0.03) 100%);
+        }
+        .contact-grid {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 4rem; margin-top: 3rem;
+        }
+        .contact-info { display: flex; flex-direction: column; gap: 1.5rem; }
+        .contact-item { display: flex; gap: 1rem; align-items: center; }
+        .contact-icon {
+            width: 44px; height: 44px; min-width: 44px;
+            background: var(--accent-glow); border-radius: 12px;
+            display: flex; align-items: center; justify-content: center; font-size: 1.2rem;
+        }
+        .contact-item h4 { font-size: 0.95rem; font-weight: 600; }
+        .contact-item p { color: var(--text-muted); font-size: 0.9rem; }
+        .contact-form {
+            background: var(--surface); border-radius: 16px; padding: 2rem;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .form-group { margin-bottom: 1.25rem; }
+        .form-group label {
+            display: block; font-size: 0.85rem; font-weight: 500;
+            margin-bottom: 0.5rem; color: var(--text-muted);
+        }
+        .form-group input, .form-group textarea {
+            width: 100%; padding: 0.75rem 1rem; background: var(--primary);
+            border: 1px solid var(--surface-light); border-radius: 10px;
+            color: var(--text); font-family: inherit; font-size: 0.95rem;
+            transition: border-color 0.3s;
+        }
+        .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--accent); }
+        .form-group textarea { min-height: 120px; resize: vertical; }
+        .form-submit {
+            width: 100%; padding: 0.85rem; background: var(--gradient-1);
+            color: white; border: none; border-radius: 12px; font-size: 0.95rem;
+            font-weight: 600; cursor: pointer; font-family: inherit; transition: all 0.3s;
+        }
+        .form-submit:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(59, 130, 246, 0.3); }
+
+        /* FOOTER */
+        footer {
+            padding: 3rem 2rem; border-top: 1px solid rgba(255,255,255,0.05); text-align: center;
+        }
+        .footer-inner {
+            max-width: 1200px; margin: 0 auto;
+            display: flex; justify-content: space-between; align-items: center;
+            flex-wrap: wrap; gap: 1rem;
+        }
+        .footer-links { display: flex; gap: 2rem; list-style: none; }
+        .footer-links a {
+            color: var(--text-muted); text-decoration: none;
+            font-size: 0.85rem; transition: color 0.3s;
+        }
+        .footer-links a:hover { color: var(--text); }
+        .footer-copy { color: var(--text-muted); font-size: 0.85rem; }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .nav-links.open {
+                display: flex; flex-direction: column; position: absolute;
+                top: 100%; left: 0; right: 0; background: rgba(15, 23, 42, 0.98);
+                padding: 2rem; border-bottom: 1px solid var(--surface-light);
+            }
+            .hamburger { display: flex; }
+            .luca-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .luca-stats { grid-template-columns: 1fr; }
+            .about-values { grid-template-columns: 1fr; }
+            .footer-inner { flex-direction: column; text-align: center; }
+            .footer-links { justify-content: center; }
+        }
+
+        /* ANIMATIONS */
+        .fade-in { opacity: 0; transform: translateY(30px); transition: all 0.6s ease-out; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+    <div class="nav-inner">
+        <div class="logo">GUS<span>IT</span></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#services" data-en="Services" data-de="Leistungen">Services</a></li>
+            <li><a href="#luca-ai" data-en="Luca AI" data-de="Luca AI">Luca AI</a></li>
+            <li><a href="#about" data-en="About" data-de="Über uns">About</a></li>
+            <li><a href="#contact" data-en="Contact" data-de="Kontakt">Contact</a></li>
+            <li>
+                <div class="lang-toggle">
+                    <button class="lang-btn active" onclick="setLang('en')">EN</button>
+                    <button class="lang-btn" onclick="setLang('de')">DE</button>
+                </div>
+            </li>
+        </ul>
+        <button class="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-badge">
+            <span class="dot"></span>
+            <span data-en="Pioneering AI-Powered IT" data-de="Wegweisende KI-gestützte IT">Pioneering AI-Powered IT</span>
+        </div>
+        <h1>
+            <span data-en="IT Consulting" data-de="IT-Beratung">IT Consulting</span><br>
+            <span class="gradient" data-en="Reimagined with AI" data-de="Neu gedacht mit KI">Reimagined with AI</span>
+        </h1>
+        <p data-en="We help businesses transform their IT infrastructure with cutting-edge consulting, cloud solutions, and our revolutionary AI operating system — Luca AI."
+           data-de="Wir helfen Unternehmen, ihre IT-Infrastruktur mit modernster Beratung, Cloud-Lösungen und unserem revolutionären KI-Betriebssystem — Luca AI — zu transformieren.">
+            We help businesses transform their IT infrastructure with cutting-edge consulting, cloud solutions, and our revolutionary AI operating system — Luca AI.
+        </p>
+        <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary" data-en="Get in Touch" data-de="Kontaktieren Sie uns">Get in Touch</a>
+            <a href="#luca-ai" class="btn btn-secondary" data-en="Discover Luca AI →" data-de="Luca AI entdecken →">Discover Luca AI →</a>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <div class="section-inner">
+        <div class="services-header fade-in">
+            <div class="section-label" data-en="What We Do" data-de="Was wir tun">What We Do</div>
+            <h2 class="section-title" data-en="Expert IT Consulting" data-de="Professionelle IT-Beratung">Expert IT Consulting</h2>
+            <p class="section-desc" data-en="From strategy to execution, we deliver end-to-end IT solutions tailored to your business needs." data-de="Von der Strategie bis zur Umsetzung liefern wir ganzheitliche IT-Lösungen, die auf Ihre Geschäftsanforderungen zugeschnitten sind.">From strategy to execution, we deliver end-to-end IT solutions tailored to your business needs.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card fade-in">
+                <div class="service-icon">☁️</div>
+                <h3 data-en="Cloud & Infrastructure" data-de="Cloud & Infrastruktur">Cloud & Infrastructure</h3>
+                <p data-en="Azure, AWS, hybrid cloud architecture, migration strategies, and infrastructure-as-code implementations." data-de="Azure, AWS, Hybrid-Cloud-Architektur, Migrationsstrategien und Infrastructure-as-Code-Implementierungen.">Azure, AWS, hybrid cloud architecture, migration strategies, and infrastructure-as-code implementations.</p>
+            </div>
+            <div class="service-card fade-in">
+                <div class="service-icon">🛡️</div>
+                <h3 data-en="Cybersecurity" data-de="Cybersicherheit">Cybersecurity</h3>
+                <p data-en="Threat assessment, zero-trust architecture, compliance frameworks, and 24/7 security monitoring." data-de="Bedrohungsanalyse, Zero-Trust-Architektur, Compliance-Frameworks und 24/7-Sicherheitsüberwachung.">Threat assessment, zero-trust architecture, compliance frameworks, and 24/7 security monitoring.</p>
+            </div>
+            <div class="service-card fade-in">
+                <div class="service-icon">🤖</div>
+                <h3 data-en="AI & Automation" data-de="KI & Automatisierung">AI & Automation</h3>
+                <p data-en="Intelligent process automation, AI integration, machine learning solutions, and predictive analytics." data-de="Intelligente Prozessautomatisierung, KI-Integration, Machine-Learning-Lösungen und prädiktive Analytik.">Intelligent process automation, AI integration, machine learning solutions, and predictive analytics.</p>
+            </div>
+            <div class="service-card fade-in">
+                <div class="service-icon">🏗️</div>
+                <h3 data-en="IT Strategy & Architecture" data-de="IT-Strategie & Architektur">IT Strategy & Architecture</h3>
+                <p data-en="Digital transformation roadmaps, enterprise architecture, technology stack optimization, and IT governance." data-de="Digitale Transformations-Roadmaps, Enterprise-Architektur, Technologie-Stack-Optimierung und IT-Governance.">Digital transformation roadmaps, enterprise architecture, technology stack optimization, and IT governance.</p>
+            </div>
+            <div class="service-card fade-in">
+                <div class="service-icon">🔄</div>
+                <h3 data-en="DevOps & CI/CD" data-de="DevOps & CI/CD">DevOps & CI/CD</h3>
+                <p data-en="Kubernetes orchestration, container strategy, CI/CD pipelines, GitOps workflows, and platform engineering." data-de="Kubernetes-Orchestrierung, Container-Strategie, CI/CD-Pipelines, GitOps-Workflows und Platform Engineering.">Kubernetes orchestration, container strategy, CI/CD pipelines, GitOps workflows, and platform engineering.</p>
+            </div>
+            <div class="service-card fade-in">
+                <div class="service-icon">📊</div>
+                <h3 data-en="Data & Analytics" data-de="Daten & Analytik">Data & Analytics</h3>
+                <p data-en="Data platform design, business intelligence, real-time analytics, and data-driven decision frameworks." data-de="Datenplattform-Design, Business Intelligence, Echtzeit-Analytik und datengetriebene Entscheidungsframeworks.">Data platform design, business intelligence, real-time analytics, and data-driven decision frameworks.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- LUCA AI -->
+<section id="luca-ai">
+    <div class="section-inner">
+        <div class="fade-in">
+            <div class="section-label" data-en="Our Product" data-de="Unser Produkt">Our Product</div>
+            <h2 class="section-title" data-en="Meet Luca AI" data-de="Lernen Sie Luca AI kennen">Meet Luca AI</h2>
+            <p class="section-desc" data-en="The world's first AI Operating System — an intelligent platform that manages your entire IT infrastructure, communications, and business operations autonomously." data-de="Das weltweit erste KI-Betriebssystem — eine intelligente Plattform, die Ihre gesamte IT-Infrastruktur, Kommunikation und Geschäftsprozesse autonom verwaltet.">The world's first AI Operating System — an intelligent platform that manages your entire IT infrastructure, communications, and business operations autonomously.</p>
+        </div>
+        <div class="luca-grid">
+            <div class="luca-visual fade-in">
+                <div class="luca-terminal">
+                    <div class="terminal-dots"><span></span><span></span><span></span></div>
+                    <div class="terminal-line"><span class="prompt">luca@ai</span> <span class="cmd">~ check infrastructure status</span></div>
+                    <div class="terminal-line"><span class="output">✓ 43 VMs monitored across 3 providers</span></div>
+                    <div class="terminal-line"><span class="output">✓ 217 apps running · all healthy</span></div>
+                    <div class="terminal-line"><span class="output">✓ 50 integrations active</span></div>
+                    <div class="terminal-line"><span class="prompt">luca@ai</span> <span class="cmd">~ deploy new service to production</span></div>
+                    <div class="terminal-line"><span class="output">✓ Building container image...</span></div>
+                    <div class="terminal-line"><span class="output">✓ Deployed in 12s · zero downtime</span></div>
+                </div>
+            </div>
+            <div class="luca-features fade-in">
+                <div class="luca-feature">
+                    <div class="luca-feature-icon">🧠</div>
+                    <div>
+                        <h4 data-en="AI-Powered Infrastructure" data-de="KI-gestützte Infrastruktur">AI-Powered Infrastructure</h4>
+                        <p data-en="Luca manages VMs, containers, networks, and storage across Azure, AWS, Hyper-V, and VMware — all through natural language." data-de="Luca verwaltet VMs, Container, Netzwerke und Speicher über Azure, AWS, Hyper-V und VMware — alles per natürlicher Sprache.">Luca manages VMs, containers, networks, and storage across Azure, AWS, Hyper-V, and VMware — all through natural language.</p>
+                    </div>
+                </div>
+                <div class="luca-feature">
+                    <div class="luca-feature-icon">📧</div>
+                    <div>
+                        <h4 data-en="Autonomous Communications" data-de="Autonome Kommunikation">Autonomous Communications</h4>
+                        <p data-en="Email, phone, chat — Luca handles inbound and outbound communications with AI personas that understand your business." data-de="E-Mail, Telefon, Chat — Luca übernimmt ein- und ausgehende Kommunikation mit KI-Personas, die Ihr Unternehmen verstehen.">Email, phone, chat — Luca handles inbound and outbound communications with AI personas that understand your business.</p>
+                    </div>
+                </div>
+                <div class="luca-feature">
+                    <div class="luca-feature-icon">🔌</div>
+                    <div>
+                        <h4 data-en="200+ Integrated Apps" data-de="200+ integrierte Apps">200+ Integrated Apps</h4>
+                        <p data-en="CRM, document management, compliance, monitoring, DevOps — a complete ecosystem of intelligent applications working together." data-de="CRM, Dokumentenmanagement, Compliance, Monitoring, DevOps — ein komplettes Ökosystem intelligenter Anwendungen.">CRM, document management, compliance, monitoring, DevOps — a complete ecosystem of intelligent applications working together.</p>
+                    </div>
+                </div>
+                <div class="luca-feature">
+                    <div class="luca-feature-icon">🔒</div>
+                    <div>
+                        <h4 data-en="Enterprise Security" data-de="Unternehmenssicherheit">Enterprise Security</h4>
+                        <p data-en="RBAC, audit logging, encrypted credentials, Active Directory integration, and compliance-first architecture." data-de="RBAC, Audit-Logging, verschlüsselte Anmeldedaten, Active-Directory-Integration und Compliance-First-Architektur.">RBAC, audit logging, encrypted credentials, Active Directory integration, and compliance-first architecture.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="luca-stats fade-in">
+            <div class="stat-card">
+                <div class="stat-number">200+</div>
+                <div class="stat-label" data-en="Integrated Apps" data-de="Integrierte Apps">Integrated Apps</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">50+</div>
+                <div class="stat-label" data-en="Provider Integrations" data-de="Anbieter-Integrationen">Provider Integrations</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label" data-en="Autonomous Operations" data-de="Autonomer Betrieb">Autonomous Operations</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="section-inner">
+        <div class="about-grid">
+            <div class="about-content fade-in">
+                <div class="section-label" data-en="About Gus IT" data-de="Über Gus IT">About Gus IT</div>
+                <h2 class="section-title" data-en="Built by Engineers, for Engineers" data-de="Von Ingenieuren, für Ingenieure">Built by Engineers, for Engineers</h2>
+                <p class="section-desc" data-en="Gus IT is a specialized IT consulting firm based in Germany. We combine deep technical expertise with a passion for innovation, helping businesses navigate the complexities of modern IT while building the future with Luca AI." data-de="Gus IT ist ein spezialisiertes IT-Beratungsunternehmen mit Sitz in Deutschland. Wir verbinden tiefgreifende technische Expertise mit Innovationsbegeisterung und helfen Unternehmen, die Komplexität moderner IT zu meistern — während wir mit Luca AI die Zukunft gestalten.">Gus IT is a specialized IT consulting firm based in Germany. We combine deep technical expertise with a passion for innovation, helping businesses navigate the complexities of modern IT while building the future with Luca AI.</p>
+                <p class="section-desc" data-en="Our team brings experience from enterprise environments, cloud-native startups, and cutting-edge AI research — delivering solutions that are practical, scalable, and future-proof." data-de="Unser Team bringt Erfahrung aus Enterprise-Umgebungen, Cloud-Native-Startups und modernster KI-Forschung mit — für Lösungen, die praktisch, skalierbar und zukunftssicher sind.">Our team brings experience from enterprise environments, cloud-native startups, and cutting-edge AI research — delivering solutions that are practical, scalable, and future-proof.</p>
+            </div>
+            <div class="about-values fade-in">
+                <div class="value-item">
+                    <h4 data-en="🎯 Precision" data-de="🎯 Präzision">🎯 Precision</h4>
+                    <p data-en="Every solution is engineered with accuracy and attention to detail." data-de="Jede Lösung wird mit Genauigkeit und Liebe zum Detail entwickelt.">Every solution is engineered with accuracy and attention to detail.</p>
+                </div>
+                <div class="value-item">
+                    <h4 data-en="🚀 Innovation" data-de="🚀 Innovation">🚀 Innovation</h4>
+                    <p data-en="We push boundaries with AI, automation, and next-gen architecture." data-de="Wir verschieben Grenzen mit KI, Automatisierung und Next-Gen-Architektur.">We push boundaries with AI, automation, and next-gen architecture.</p>
+                </div>
+                <div class="value-item">
+                    <h4 data-en="🤝 Partnership" data-de="🤝 Partnerschaft">🤝 Partnership</h4>
+                    <p data-en="We work alongside your team, not above it. True collaboration." data-de="Wir arbeiten mit Ihrem Team zusammen, nicht darüber. Echte Zusammenarbeit.">We work alongside your team, not above it. True collaboration.</p>
+                </div>
+                <div class="value-item">
+                    <h4 data-en="🔐 Security" data-de="🔐 Sicherheit">🔐 Security</h4>
+                    <p data-en="Security-first mindset in everything we build and recommend." data-de="Sicherheit steht bei allem, was wir entwickeln und empfehlen, an erster Stelle.">Security-first mindset in everything we build and recommend.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="section-inner">
+        <div class="fade-in">
+            <div class="section-label" data-en="Get Started" data-de="Loslegen">Get Started</div>
+            <h2 class="section-title" data-en="Let's Talk" data-de="Sprechen wir darüber">Let's Talk</h2>
+            <p class="section-desc" data-en="Ready to transform your IT? Reach out and let's discuss how we can help." data-de="Bereit, Ihre IT zu transformieren? Kontaktieren Sie uns und lassen Sie uns besprechen, wie wir helfen können.">Ready to transform your IT? Reach out and let's discuss how we can help.</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info fade-in">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div>
+                        <h4 data-en="Email" data-de="E-Mail">Email</h4>
+                        <p>info@gusit.de</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🌐</div>
+                    <div>
+                        <h4>Web</h4>
+                        <p>www.gusit.de</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <h4 data-en="Location" data-de="Standort">Location</h4>
+                        <p data-en="Germany" data-de="Deutschland">Germany</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form fade-in" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label data-en="Name" data-de="Name">Name</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Email" data-de="E-Mail">Email</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label data-en="Message" data-de="Nachricht">Message</label>
+                    <textarea required></textarea>
+                </div>
+                <button type="submit" class="form-submit" data-en="Send Message" data-de="Nachricht senden">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <div class="logo">GUS<span>IT</span></div>
+        <ul class="footer-links">
+            <li><a href="#services" data-en="Services" data-de="Leistungen">Services</a></li>
+            <li><a href="#luca-ai">Luca AI</a></li>
+            <li><a href="#about" data-en="About" data-de="Über uns">About</a></li>
+            <li><a href="#contact" data-en="Contact" data-de="Kontakt">Contact</a></li>
+        </ul>
+        <div class="footer-copy">&copy; 2026 Gus IT. <span data-en="All rights reserved." data-de="Alle Rechte vorbehalten.">All rights reserved.</span></div>
+    </div>
+</footer>
+
+<script>
+    let currentLang = 'en';
+    function setLang(lang) {
+        currentLang = lang;
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.textContent === lang.toUpperCase());
+        });
+        document.documentElement.lang = lang;
+        document.querySelectorAll('[data-' + lang + ']').forEach(el => {
+            const text = el.getAttribute('data-' + lang);
+            if (text) {
+                if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                    el.placeholder = text;
+                } else {
+                    el.textContent = text;
+                }
+            }
+        });
+    }
+    window.addEventListener('scroll', () => {
+        document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+    });
+    function toggleMenu() {
+        document.getElementById('navLinks').classList.toggle('open');
+    }
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.getElementById('navLinks').classList.remove('open');
+        });
+    });
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    function handleSubmit(e) {
+        e.preventDefault();
+        const btn = e.target.querySelector('.form-submit');
+        const orig = btn.textContent;
+        btn.textContent = currentLang === 'de' ? '✓ Gesendet!' : '✓ Sent!';
+        btn.style.background = '#22c55e';
+        setTimeout(() => { btn.textContent = orig; btn.style.background = ''; e.target.reset(); }, 2000);
+    }
+    if (navigator.language.startsWith('de')) setLang('de');
+</script>
+</body>
+</html>
