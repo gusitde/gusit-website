@@ -1,5 +1,2 @@
-# 301 map from the old single-page anchors (post-cutover SEO safety)
-/index.html              /                 301
-/#services               /                 301
-/#contact                /                 301
-/#about                  /                 301
+# 301 map from the old single-page site (post-cutover SEO safety)
+/index.html    /    301

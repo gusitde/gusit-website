@@ -6,7 +6,7 @@ Static multi-page site for the Gus IT LLC consultancy (EN at `/`, German at `/de
 
 - Plain static HTML/CSS/vanilla JS — no framework, no build step (company standard).
 - `public/` is the deploy root. `public/_headers` carries CSP/HSTS; `public/_redirects` carries the 301 map.
-- One Pages Function (`functions/api/contact.js`) handles the contact form: Turnstile verify → Resend email → best-effort platform webhook. Configured entirely via Pages env vars (`TURNSTILE_SECRET`, `RESEND_API_KEY`, `CONTACT_TO`, `CONTACT_FROM`, `LEAD_WEBHOOK_URL`) — no hardcoded values.
+- One Pages Function (`functions/api/contact.js`) handles the contact form: honeypot → Turnstile verify → Resend email. Configured entirely via Pages env vars (`TURNSTILE_SECRET`, `RESEND_API_KEY`, `CONTACT_TO`, `CONTACT_FROM`) — no hardcoded values. (Planned follow-up: best-effort `LEAD_WEBHOOK_URL` into the Luca lead intake.)
 - Fonts are self-hosted (GDPR: no Google Fonts). Icons are an inline SVG sprite. Analytics: Cloudflare Web Analytics (cookieless) only.
 
 ## Deploys

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Selected Work &amp; Case Studies — Gus IT</title>
+  <meta name="description" content="How we deliver: a multi-site Hyper-V &amp; SCVMM residency, an industrialized application-migration methodology, and engineer-supervised AI delivery.">
+  <link rel="canonical" href="https://gusit.de/work/">
+  <link rel="alternate" hreflang="en" href="https://gusit.de/work/">
+  <link rel="alternate" hreflang="de" href="https://gusit.de/de/work/">
+  <link rel="alternate" hreflang="x-default" href="https://gusit.de/work/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Gus IT">
+  <meta property="og:url" content="https://gusit.de/work/">
+  <meta property="og:title" content="Selected work — Gus IT">
+  <meta property="og:description" content="A multi-site Hyper-V &amp; SCVMM residency, an industrialized migration methodology, and engineer-supervised AI delivery.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/assets/site.css">
+  <script src="/assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Gus IT — home">
+        <img class="brand-mark" src="/favicon.svg" alt="" width="28" height="28">
+        <span>Gus IT</span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="/#services">Services</a></li>
+          <li><a href="/work/">Work</a></li>
+          <li><a href="/#luca-ai">Luca AI</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+        <a class="lang-toggle" href="/de/work/" hreflang="de" lang="de" aria-label="Diese Seite auf Deutsch lesen">
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#icon-globe"></use></svg>
+          Deutsch
+        </a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <div class="page-head">
+      <div class="container">
+        <h1 class="section-title">Selected work</h1>
+        <p class="intro">Three stories about how we deliver. Client names appear only with written permission; where clearance is pending, engagements are described anonymously — the work is real either way.</p>
+      </div>
+    </div>
+
+    <!-- Case study 1 — Residency -->
+    <article class="case-study prose">
+      <div class="container">
+        <h2>Validation-first: a multi-site Hyper-V &amp; SCVMM residency</h2>
+        <p class="case-context">For a global IT services firm's state-government end client · delivered under a Dell residency contract</p>
+        <p>The client's engineers had already done the heavy lifting: hosts deployed, failover clusters formed, the network fabric built across two sites. What they asked for was not a rebuild — it was certainty. Had it been built right? Would it hold in operation? And what should the management layer look like?</p>
+        <p>We structured the residency around that question. The first three weeks were pure validation: host configuration, cluster behavior, storage and network paths — tested methodically, with findings documented as we went. No inherited assumptions, no credit given for "should be fine."</p>
+        <p>On that validated foundation, we designed the SCVMM target state and built it out across both sites, followed by enablement sessions so the client's team could run what they now owned.</p>
+        <p>The moment we tell this story for came midway through: the customer's engineering team reviewed our target-state design and challenged one of its core decisions — where the ownership boundary between Network ATC and SCVMM should sit for network configuration. They were right to push. We revised the design, and version 1.1 carries their review: a cleaner split of who manages what, agreed line by line with the people who operate the platform.</p>
+        <p>Some consultancies would call that scope friction. We call it the engagement working as designed — we engineer with the customer, not at them. A design that survives the customer's own engineers is worth more than one that was never challenged.</p>
+        <p>What remained when we left: validation reports, the revised target-state design, build documentation, and a team enabled to operate the platform. Every hour of the residency left an artifact behind.</p>
+      </div>
+    </article>
+
+    <!-- Case study 2 — Migration methodology -->
+    <article class="case-study prose">
+      <div class="container">
+        <h2>An application-migration methodology, industrialized</h2>
+        <p class="case-context">Active application-migration engagement with Dell · B2B2B delivery</p>
+        <p>Application migrations rarely fail in the tooling. They fail in the gaps — between discovery and planning, between the runbook in someone's head and the one executed at 2 a.m., between "we can roll back" and an actual, tested rollback plan.</p>
+        <p>In our engagement with Dell, we took Dell's three-phase migration methodology and industrialized it: not a slide framework, but a governed migration factory.</p>
+        <p>How the factory works:</p>
+        <ul>
+          <li><strong>Phase gates.</strong> Each phase ends in a gate with defined entry and exit criteria. Nothing moves forward on momentum.</li>
+          <li><strong>Generated runbooks — and generated rollback plans.</strong> For every move group, the factory produces the forward path and the way back, in consistent, reviewable form. The rollback plan is not an afterthought; it is generated alongside the runbook, every time.</li>
+          <li><strong>Human go/no-go.</strong> AI agents prepare the evidence — discovery synthesis, dependency mapping, validation checks, documentation. A human makes every gate decision. No migration step executes on an agent's say-so.</li>
+          <li><strong>Full traceability.</strong> Every decision and action is logged and attributable: what was done, when, by whom, on whose approval.</li>
+        </ul>
+        <p>We are deliberate about what this page claims. This is a methodology and capability story: the factory is productized inside an active Dell engagement, delivered B2B2B to Dell's customers. We will publish outcomes when customer migrations complete — not before.</p>
+        <p>If your migration backlog looks like a long row of heroic one-off projects, the factory model is the alternative: industrial consistency in the artifacts, human judgment at every gate.</p>
+      </div>
+    </article>
+
+    <!-- Case study 3 — Delivery model -->
+    <article class="case-study prose">
+      <div class="container">
+        <h2>Agentic delivery, engineer-supervised</h2>
+        <p class="case-context">Our delivery model · how every Gus IT engagement runs</p>
+        <p>The first question a serious buyer asks about AI-driven delivery is the right one: is it safe to let AI agents near production infrastructure?</p>
+        <p>Our answer is a strict division of labor, applied on every engagement.</p>
+        <p>What our AI agents do: the repetitive engineering that consumes senior time and invites human error. They run discovery across estates, synthesize configurations into documentation, generate runbooks and rollback plans, execute validation checks, and keep the paper trail current — consistently, at any hour, without fatigue.</p>
+        <p>What they never do: approve a design. Touch a production system unsupervised. Make a go/no-go call.</p>
+        <p>Every engagement has a named senior engineer who owns design approval and every state-changing action. Our automation is built dry-run-safe: it can be rehearsed without touching live systems, and every phase carries a rollback plan before it carries a change. Every action — human or agent — is logged and attributable, so you always know who decided and who acted.</p>
+        <p>Why this matters to you: you get the consistency of a factory in the artifacts — documentation that is actually complete, runbooks that are actually current — without surrendering judgment to a machine. The engineer is not reviewing the AI's homework after the fact; the engineer is the gate the work passes through.</p>
+        <p>This is not a lab concept. It is how we deliver our contracted work today, including engagements under partner and channel contracts.</p>
+        <p>If you are weighing whether AI belongs in your delivery chain — or how to govern it once it's there — bring your hardest questions to the assessment call. This model is built to be interrogated.</p>
+      </div>
+    </article>
+
+    <!-- Closing CTA -->
+    <section class="cta-final">
+      <div class="container">
+        <p>Sound like your situation?</p>
+        <a class="btn btn-primary" href="/#contact">Book a 30-minute assessment</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-tagline">Gus IT — IT consulting that runs on its own AI.</p>
+          <p class="footer-trust">NVIDIA Inception Member</p>
+        </div>
+        <nav class="footer-col" aria-label="Site">
+          <h2 class="footer-heading">Site</h2>
+          <ul>
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/work/">Work</a></li>
+            <li><a href="/#luca-ai">Luca AI</a></li>
+            <li><a href="/#about">About</a></li>
+            <li><a href="/#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Legal">
+          <h2 class="footer-heading">Legal</h2>
+          <ul>
+            <li><a href="/impressum/">Impressum</a></li>
+            <li><a href="/privacy/">Privacy Policy</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-meta">
+        <p>Gus IT LLC — a Florida (USA) limited liability company, serving DACH clients remotely and on-site.</p>
+        <p><a href="mailto:kontakt@gusit.de">kontakt@gusit.de</a></p>
+        <p>© 2026 Gus IT LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
