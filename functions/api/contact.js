@@ -71,7 +71,7 @@ export async function onRequestPost(context) {
     },
     body: JSON.stringify({
       from: env.CONTACT_FROM,
-      to: env.CONTACT_TO,
+      to: env.CONTACT_TO.split(',').map((a) => a.trim()),
       reply_to: email,
       subject: `gusit.de contact: ${name}`,
       text: body
