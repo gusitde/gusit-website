@@ -21,6 +21,40 @@
     });
   }
 
+  /* ---------- Language switcher (dropdown) ---------- */
+  var switcher = document.querySelector('[data-lang-switcher]');
+  if (switcher) {
+    var langBtn = switcher.querySelector('.lang-toggle');
+    var langMenu = switcher.querySelector('.lang-menu');
+
+    var closeLangMenu = function () {
+      if (!langMenu.hidden) {
+        langMenu.hidden = true;
+        langBtn.setAttribute('aria-expanded', 'false');
+      }
+    };
+
+    if (langBtn && langMenu) {
+      langBtn.addEventListener('click', function () {
+        var willOpen = langMenu.hidden;
+        langMenu.hidden = !willOpen;
+        langBtn.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+      });
+
+      /* Outside click closes the menu (button clicks land inside `switcher`). */
+      document.addEventListener('click', function (e) {
+        if (!switcher.contains(e.target)) closeLangMenu();
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && !langMenu.hidden) {
+          closeLangMenu();
+          langBtn.focus();
+        }
+      });
+    }
+  }
+
   /* ---------- Contact form ---------- */
   var form = document.querySelector('[data-contact-form]');
   if (!form) return;
@@ -74,10 +108,19 @@
     formMsg.hidden = false;
   }
 
+  function showValidationMsg() {
+    var msg = form.getAttribute('data-msg-validation');
+    if (!msg || !formMsg) return;
+    formMsg.textContent = msg;
+    formMsg.classList.remove('is-ok', 'is-err');
+    formMsg.classList.add('is-err');
+    formMsg.hidden = false;
+  }
+
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     if (formMsg) formMsg.hidden = true;
-    if (!validate()) return;
+    if (!validate()) { showValidationMsg(); return; }
 
     var tokenInput = form.querySelector('[name="cf-turnstile-response"]');
     var companyInput = field('contact-company');

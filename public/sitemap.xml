@@ -3,30 +3,254 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://gusit.de/</loc>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://gusit.de/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://gusit.de/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gusit.de/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gusit.de/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://gusit.de/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://gusit.de/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://gusit.de/hi/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://gusit.de/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://gusit.de/zh/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gusit.de/"/>
   </url>
   <url>
     <loc>https://gusit.de/de/</loc>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://gusit.de/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://gusit.de/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gusit.de/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gusit.de/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://gusit.de/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://gusit.de/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://gusit.de/hi/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://gusit.de/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://gusit.de/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gusit.de/"/>
+  </url>
+  <url>
+    <loc>https://gusit.de/es/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gusit.de/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gusit.de/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gusit.de/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gusit.de/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://gusit.de/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://gusit.de/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://gusit.de/hi/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://gusit.de/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://gusit.de/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gusit.de/"/>
+  </url>
+  <url>
+    <loc>https://gusit.de/fr/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gusit.de/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gusit.de/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gusit.de/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gusit.de/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://gusit.de/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://gusit.de/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://gusit.de/hi/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://gusit.de/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://gusit.de/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gusit.de/"/>
+  </url>
+  <url>
+    <loc>https://gusit.de/pt/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gusit.de/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gusit.de/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gusit.de/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gusit.de/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://gusit.de/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://gusit.de/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://gusit.de/hi/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://gusit.de/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://gusit.de/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gusit.de/"/>
+  </url>
+  <url>
+    <loc>https://gusit.de/ar/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gusit.de/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gusit.de/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gusit.de/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gusit.de/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://gusit.de/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://gusit.de/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://gusit.de/hi/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://gusit.de/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://gusit.de/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gusit.de/"/>
+  </url>
+  <url>
+    <loc>https://gusit.de/hi/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gusit.de/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gusit.de/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gusit.de/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gusit.de/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://gusit.de/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://gusit.de/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://gusit.de/hi/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://gusit.de/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://gusit.de/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gusit.de/"/>
+  </url>
+  <url>
+    <loc>https://gusit.de/ru/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gusit.de/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gusit.de/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gusit.de/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gusit.de/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://gusit.de/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://gusit.de/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://gusit.de/hi/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://gusit.de/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://gusit.de/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gusit.de/"/>
+  </url>
+  <url>
+    <loc>https://gusit.de/zh/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gusit.de/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gusit.de/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gusit.de/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gusit.de/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://gusit.de/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://gusit.de/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://gusit.de/hi/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://gusit.de/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://gusit.de/zh/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gusit.de/"/>
   </url>
   <url>
     <loc>https://gusit.de/work/</loc>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://gusit.de/work/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://gusit.de/de/work/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gusit.de/es/work/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gusit.de/fr/work/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://gusit.de/pt/work/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://gusit.de/ar/work/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://gusit.de/hi/work/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://gusit.de/ru/work/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://gusit.de/zh/work/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gusit.de/work/"/>
   </url>
   <url>
     <loc>https://gusit.de/de/work/</loc>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://gusit.de/work/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://gusit.de/de/work/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gusit.de/es/work/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gusit.de/fr/work/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://gusit.de/pt/work/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://gusit.de/ar/work/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://gusit.de/hi/work/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://gusit.de/ru/work/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://gusit.de/zh/work/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gusit.de/work/"/>
+  </url>
+  <url>
+    <loc>https://gusit.de/es/work/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gusit.de/work/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gusit.de/de/work/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gusit.de/es/work/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gusit.de/fr/work/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://gusit.de/pt/work/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://gusit.de/ar/work/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://gusit.de/hi/work/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://gusit.de/ru/work/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://gusit.de/zh/work/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gusit.de/work/"/>
+  </url>
+  <url>
+    <loc>https://gusit.de/fr/work/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gusit.de/work/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gusit.de/de/work/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gusit.de/es/work/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gusit.de/fr/work/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://gusit.de/pt/work/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://gusit.de/ar/work/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://gusit.de/hi/work/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://gusit.de/ru/work/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://gusit.de/zh/work/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gusit.de/work/"/>
+  </url>
+  <url>
+    <loc>https://gusit.de/pt/work/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gusit.de/work/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gusit.de/de/work/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gusit.de/es/work/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gusit.de/fr/work/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://gusit.de/pt/work/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://gusit.de/ar/work/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://gusit.de/hi/work/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://gusit.de/ru/work/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://gusit.de/zh/work/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gusit.de/work/"/>
+  </url>
+  <url>
+    <loc>https://gusit.de/ar/work/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gusit.de/work/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gusit.de/de/work/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gusit.de/es/work/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gusit.de/fr/work/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://gusit.de/pt/work/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://gusit.de/ar/work/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://gusit.de/hi/work/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://gusit.de/ru/work/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://gusit.de/zh/work/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gusit.de/work/"/>
+  </url>
+  <url>
+    <loc>https://gusit.de/hi/work/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gusit.de/work/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gusit.de/de/work/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gusit.de/es/work/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gusit.de/fr/work/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://gusit.de/pt/work/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://gusit.de/ar/work/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://gusit.de/hi/work/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://gusit.de/ru/work/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://gusit.de/zh/work/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gusit.de/work/"/>
+  </url>
+  <url>
+    <loc>https://gusit.de/ru/work/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gusit.de/work/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gusit.de/de/work/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gusit.de/es/work/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gusit.de/fr/work/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://gusit.de/pt/work/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://gusit.de/ar/work/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://gusit.de/hi/work/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://gusit.de/ru/work/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://gusit.de/zh/work/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gusit.de/work/"/>
+  </url>
+  <url>
+    <loc>https://gusit.de/zh/work/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gusit.de/work/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gusit.de/de/work/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gusit.de/es/work/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gusit.de/fr/work/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://gusit.de/pt/work/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://gusit.de/ar/work/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://gusit.de/hi/work/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://gusit.de/ru/work/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://gusit.de/zh/work/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gusit.de/work/"/>
   </url>
   <url>

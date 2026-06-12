@@ -8,6 +8,13 @@
   <link rel="canonical" href="https://gusit.de/">
   <link rel="alternate" hreflang="en" href="https://gusit.de/">
   <link rel="alternate" hreflang="de" href="https://gusit.de/de/">
+  <link rel="alternate" hreflang="es" href="https://gusit.de/es/">
+  <link rel="alternate" hreflang="fr" href="https://gusit.de/fr/">
+  <link rel="alternate" hreflang="pt" href="https://gusit.de/pt/">
+  <link rel="alternate" hreflang="ar" href="https://gusit.de/ar/">
+  <link rel="alternate" hreflang="hi" href="https://gusit.de/hi/">
+  <link rel="alternate" hreflang="ru" href="https://gusit.de/ru/">
+  <link rel="alternate" hreflang="zh" href="https://gusit.de/zh/">
   <link rel="alternate" hreflang="x-default" href="https://gusit.de/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Gus IT">
@@ -52,10 +59,23 @@
           <li><a href="/#about">About</a></li>
           <li><a href="/#contact">Contact</a></li>
         </ul>
-        <a class="lang-toggle" href="/de/" hreflang="de" lang="de" aria-label="Diese Seite auf Deutsch lesen">
-          <svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#icon-globe"></use></svg>
-          Deutsch
-        </a>
+        <div class="lang-switcher" data-lang-switcher>
+          <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="English">
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons.svg#icon-globe"></use></svg>
+            EN
+          </button>
+          <ul class="lang-menu" hidden>
+            <li><a href="/" lang="en" hreflang="en" aria-current="true" aria-label="Read this page in English">English</a></li>
+            <li><a href="/de/" lang="de" hreflang="de" aria-label="Diese Seite auf Deutsch lesen">Deutsch</a></li>
+            <li><a href="/es/" lang="es" hreflang="es" aria-label="Leer esta página en español">Español</a></li>
+            <li><a href="/fr/" lang="fr" hreflang="fr" aria-label="Lire cette page en français">Français</a></li>
+            <li><a href="/pt/" lang="pt" hreflang="pt" aria-label="Ler esta página em português">Português</a></li>
+            <li><a href="/ar/" lang="ar" hreflang="ar" aria-label="اقرأ هذه الصفحة باللغة العربية">العربية</a></li>
+            <li><a href="/hi/" lang="hi" hreflang="hi" aria-label="यह पेज हिन्दी में पढ़ें">हिन्दी</a></li>
+            <li><a href="/ru/" lang="ru" hreflang="ru" aria-label="Читать эту страницу по-русски">Русский</a></li>
+            <li><a href="/zh/" lang="zh" hreflang="zh" aria-label="以简体中文阅读本页">中文</a></li>
+          </ul>
+        </div>
       </nav>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
         <span class="nav-toggle-bar"></span>
